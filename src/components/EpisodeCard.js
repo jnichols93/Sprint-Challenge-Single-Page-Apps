@@ -1,29 +1,17 @@
-import React from "React";
-import Axios from 'axios';
-import EpisodeCard from './EpisodeCard';
+import React from "react";
 
-export default function EpisodeList() {
-    const [episodes, setEpisodes ]= useState([]);
-
-    useEffect(() => {
-        Axios.get('https://rickandmortyapi.com/api/episode/')
-        .then(dataset => {
-            // console.log(dataset.data);
-            setEpisodes(dataset.data.results)
-        }).catch(err => {
-            console.log('Something went wrong in Epsiodes: ', error)
-        })
-    }, [])
+export default function EpisodeCard({ name, airDate, episode }) {
     return (
-        <section className="grid-view">
-            {episodes.map(episode => (
-                <EpisodeCard 
-                key={episode.id}
-                name={episode.name}
-                airDate={episode.air_date}
-                episode={episode.episode}
-                />
-            ))}
-        </section>
+        <div className="ui card">
+            <div className="content">
+                <h2 className="header">{name}</h2>
+                <div className="meta">
+                    <span className="date">{episode}</span>
+                </div>
+                <div className="description">
+                    <p>Air Date: {airDate}</p>
+                </div>
+            </div>
+        </div>
     )
 }
