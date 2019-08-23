@@ -25,11 +25,13 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 - [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
-- [ ] What does AJAX stand for?
-> Answer:
+> Answer: less data needs to be processed so all of the routing between views is faster, which is great because wow am I impatient. 
+
+- [ ] What does AJAX stand for? 
+> Answer:well nothing if youre reffering to AFC AJAX which is Amsterdamsche Football Club Ajax, which is a football team from amsterdam, but if were staying on topic talking all about Asynchronus(did i spell that right) javascript and xml.
+
 - [ ] What are `controlled components` in React?
-> Answer:
+> Answer: Controlled components handle form data through a react component, think of it like this, youre at the store you see a kid that kid is the form data, the leash on said kid is your react component, and the lady yelling at you because you asked if the form component was a rescue is the DOM.
 
 
 ## Project Set Up
